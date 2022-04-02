@@ -11,10 +11,10 @@ const inputEl = document.getElementById("input-el");
 
 // Grabing the ul element
 const ulel = document.getElementById("ul-el");
-
-// checking for leads in local storage
+// Fetching the leads from the localStorage
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("MyLeads"));
 
+// checking for leads in local storage
 // Check leads from local storage is truthy
 if (leadsFromLocalStorage) {
   myLeads = leadsFromLocalStorage;
